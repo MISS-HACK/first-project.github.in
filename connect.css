@@ -1,0 +1,132 @@
+* {
+    margin: 0%;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.head {
+    font-family: Arial;
+    color: #05011e;
+    background-color: #f6e73f;
+    font-size: 50px;
+}
+
+.box {
+    position: center;
+    padding: 10px;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #7f7f7f;
+    display: flex;
+    height: 600px;
+    width: 700px;
+    flex-wrap: wrap;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    background: #0d3e55;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hole button {
+    box-shadow: 0 11px #7f7f7f;
+    cursor: pointer;
+}
+
+.player1 .hole {
+    background-color: #fb35e0;
+}
+
+.player2 .hole {
+    background-color: #06d02b;
+}
+.victory {
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    top: 25%;
+    width: 700px;
+    height: 200px;
+    background-color: #14fcf8;
+    font-size: 100px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #040ead;
+    text-shadow: rgba(245, 245, 245, 0.5) 3px 5px 1px;
+}
+
+.restart {
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    width: 700px;
+    height: 589px;
+    border-radius: 50px;
+    background: white;
+    color: #f48024;
+    font-family: "Lucida Console", Monaco, monospace;
+    box-shadow: 0 11px #7f7f7f;
+    transition: color 3s;
+}
+
+.restart p {
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+}
+
+.restart:hover {
+    cursor: pointer;
+    color: #ffcc00;
+}
+
+.text {
+    color: #7f7f7f;
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+    font-size: 30px;
+    right: 5%;
+    width: 50%;
+    left: 750px;
+}
+
+.text h1 {
+    text-align: right;
+    color: #f48024;
+}
+
+.curP {
+    position: absolute;
+    top: 508px;
+    left: 750px;
+    padding: 10px;
+    color: #efefef;
+    border-left: 1px solid #7f7f7f;
+    font-size: 30px;
+}
+
+.curP h4 {
+    color: #7f7f7f;
+}
+
+.p1 {
+    color: #ed403c;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.p2 {
+    color: #670251;
+    text-decoration: underline;
+    font-weight: bold;
+}
